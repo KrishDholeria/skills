@@ -1,0 +1,12 @@
+{
+  "_comment": "Credential via --defaults-extra-file only. Real enforcement is the read-only user; connect-db adds keyword check + SET SESSION TRANSACTION READ ONLY.",
+  "allow": [
+    "Bash(mysql --defaults-extra-file={{PROJECT_ROOT}}/.claude/secrets/my.cnf*)"
+  ],
+  "deny": [
+    "Bash(mysqldump*)",
+    "Bash(mysqladmin*)",
+    "Bash(mysql -p*)",
+    "Bash(mysql --password*)"
+  ]
+}

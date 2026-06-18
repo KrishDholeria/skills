@@ -1,0 +1,18 @@
+{
+  "_comment": "Hook fragment merged into <root>/.claude/settings.local.json by Phase 4. The ship gate enforces the /work-ticket pipeline (spec approved + tests passing before MR/PR creation); it is inert on branches with no active task state.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$HOME/.claude/skills/project-init/scripts/ship-gate.py\"",
+            "timeout": 10,
+            "statusMessage": "Checking work-ticket ship gate..."
+          }
+        ]
+      }
+    ]
+  }
+}

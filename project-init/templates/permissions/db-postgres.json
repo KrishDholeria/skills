@@ -1,0 +1,13 @@
+{
+  "_comment": "Single allowed invocation shape — credential comes from PGPASSFILE, never inline. Real enforcement is the read-only role; the connect-db skill adds keyword check + BEGIN READ ONLY.",
+  "allow": [
+    "Bash(PGPASSFILE={{PROJECT_ROOT}}/.claude/secrets/pgpass psql -h {{DB_HOST}}*)"
+  ],
+  "deny": [
+    "Bash(PGPASSWORD=*)",
+    "Bash(pg_dump*)",
+    "Bash(pg_restore*)",
+    "Bash(dropdb*)",
+    "Bash(createdb*)"
+  ]
+}

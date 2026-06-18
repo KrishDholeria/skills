@@ -1,0 +1,18 @@
+{
+  "_comment": "Assumes ankitpokhrel/jira-cli. State transitions (move/transition) are ticket-state-changes — denied.",
+  "allow": [
+    "Bash(jira issue list*)",
+    "Bash(jira issue view*)",
+    "Bash(jira issue comment add*)",
+    "Bash(jira sprint list*)",
+    "Bash(jira board list*)",
+    "Bash(jira epic list*)"
+  ],
+  "deny": [
+    "Bash(jira issue move*)",
+    "Bash(jira issue edit*)",
+    "Bash(jira issue delete*)",
+    "Bash(jira issue assign*)",
+    "Bash(jira issue create*)"
+  ]
+}

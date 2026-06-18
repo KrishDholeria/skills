@@ -1,0 +1,21 @@
+{
+  "_comment": "All access through the dedicated read-only profile. Mutating verbs also denied globally in ~/.claude/settings.json.",
+  "allow": [
+    "Bash(aws --profile {{AWS_PROFILE}} * describe*)",
+    "Bash(aws --profile {{AWS_PROFILE}} * get*)",
+    "Bash(aws --profile {{AWS_PROFILE}} * list*)",
+    "Bash(aws --profile {{AWS_PROFILE}} logs *)",
+    "Bash(aws --profile {{AWS_PROFILE}} s3 ls*)",
+    "Bash(aws --profile {{AWS_PROFILE}} sts get-caller-identity*)"
+  ],
+  "deny": [
+    "Bash(aws * delete*)",
+    "Bash(aws * terminate*)",
+    "Bash(aws * create*)",
+    "Bash(aws * put*)",
+    "Bash(aws * update*)",
+    "Bash(aws s3 rm*)",
+    "Bash(aws s3 sync*)",
+    "Bash(aws s3 mv*)"
+  ]
+}

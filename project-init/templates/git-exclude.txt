@@ -1,0 +1,6 @@
+CLAUDE.local.md
+.claude/
+.gitnexus/
+.mcp.json
+CLAUDE.md
+AGENTS.md

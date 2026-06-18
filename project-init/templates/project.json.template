@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "generatedBy": "project-init/1.0.0",
+  "generatedAt": "{{GENERATED_AT}}",
+  "project": {
+    "name": "{{PROJECT_NAME}}",
+    "root": "{{PROJECT_ROOT}}",
+    "description": "{{DESCRIPTION}}",
+    "vault": "{{VAULT_NAME}}"
+  },
+  "stack": {
+    "languages": [],
+    "runtimes": {},
+    "packageManagers": [],
+    "frameworks": [],
+    "subprojects": []
+  },
+  "commands": {
+    "install": { "cmd": null, "cwd": ".", "verified": null, "source": "detected" },
+    "test":    { "cmd": null, "cwd": ".", "verified": null, "source": "detected" },
+    "lint":    { "cmd": null, "cwd": ".", "verified": null, "source": "detected" },
+    "build":   { "cmd": null, "cwd": ".", "verified": null, "source": "detected" },
+    "dev":     { "cmd": null, "cwd": ".", "url": null, "readyCheck": null, "verified": null, "source": "detected" }
+  },
+  "git": {
+    "defaultBranch": "{{DEFAULT_BRANCH}}",
+    "targetBranch": "{{TARGET_BRANCH}}",
+    "protectedBranches": ["{{DEFAULT_BRANCH}}", "{{TARGET_BRANCH}}"],
+    "branchPrefixes": ["feature/", "bugfix/", "hotfix/", "chore/", "docs/", "refactor/", "test/"],
+    "remote": "{{GIT_REMOTE}}"
+  },
+  "tracker": {
+    "type": null,
+    "cli": null,
+    "project": null,
+    "repoProject": null,
+    "boardId": null,
+    "iterationCadenceId": null,
+    "statusLabels": [],
+    "auth": { "method": null, "tokenEnv": null }
+  },
+  "database": {
+    "engine": null,
+    "host": null,
+    "port": null,
+    "databases": [],
+    "user": null,
+    "credentialFile": null,
+    "readOnly": { "roleLevel": false, "skillLevel": true }
+  },
+  "cloud": {
+    "provider": null,
+    "profile": null,
+    "regions": [],
+    "notes": null
+  },
+  "environments": [],
+  "autonomy": {
+    "tier": "standard",
+    "blocked": ["merge-to-protected", "deploy", "db-write", "cloud-mutation", "ticket-state-change"]
+  },
+  "kb": {
+    "vaultPath": "{{VAULT_PATH}}",
+    "runbooks": "runbooks"
+  },
+  "gitnexus": { "indexedPaths": ["."] },
+  "detection": {
+    "fingerprints": {},
+    "declined": [],
+    "lastRun": "{{GENERATED_AT}}"
+  }
+}

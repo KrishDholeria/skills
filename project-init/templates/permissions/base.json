@@ -1,0 +1,17 @@
+{
+  "_comment": "Universal fragment. {{CMD_*}} are rendered from project.json commands; drop entries whose command is null. {{STAGING_URL}} repeated per environment.",
+  "allow": [
+    "Bash({{CMD_TEST}}*)",
+    "Bash({{CMD_LINT}}*)",
+    "Bash({{CMD_BUILD}}*)",
+    "Bash({{CMD_INSTALL}}*)",
+    "Bash(curl -s {{STAGING_URL}}*)",
+    "Bash(curl -sf {{STAGING_URL}}*)",
+    "Bash(bash ~/.claude/scripts/kb-save.sh*)",
+    "Bash(bash ~/.claude/scripts/kb-search.sh*)",
+    "Bash(bash ~/.claude/scripts/kb-outline.sh*)",
+    "Bash(bash ~/.claude/scripts/kb-health.sh*)",
+    "WebSearch"
+  ],
+  "deny": []
+}

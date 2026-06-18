@@ -1,0 +1,17 @@
+{
+  "_comment": "All access through a viewer-role service account configuration ({{GCP_CONFIG}} = named gcloud configuration).",
+  "allow": [
+    "Bash(gcloud --configuration {{GCP_CONFIG}} * describe*)",
+    "Bash(gcloud --configuration {{GCP_CONFIG}} * list*)",
+    "Bash(gcloud --configuration {{GCP_CONFIG}} logging read*)",
+    "Bash(gsutil ls*)"
+  ],
+  "deny": [
+    "Bash(gcloud * delete*)",
+    "Bash(gcloud * create*)",
+    "Bash(gcloud * deploy*)",
+    "Bash(gcloud * update*)",
+    "Bash(gsutil rm*)",
+    "Bash(gsutil cp * gs://*)"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "_comment": "glab api mutations cannot be fully pattern-blocked; skill text mandates GET-only via glab api except the documented discussions/notes POST in post-review-comments.",
+  "allow": [
+    "Bash(glab mr list*)",
+    "Bash(glab mr view*)",
+    "Bash(glab mr diff*)",
+    "Bash(glab mr create*)",
+    "Bash(glab mr update*)",
+    "Bash(glab issue list*)",
+    "Bash(glab issue view*)",
+    "Bash(glab issue note*)",
+    "Bash(glab api projects/*)",
+    "Bash(glab api groups/*)"
+  ],
+  "deny": [
+    "Bash(glab mr merge*)",
+    "Bash(glab mr approve*)",
+    "Bash(glab mr close*)",
+    "Bash(glab mr delete*)",
+    "Bash(glab issue close*)",
+    "Bash(glab issue reopen*)",
+    "Bash(glab issue update*)",
+    "Bash(glab issue delete*)"
+  ]
+}
