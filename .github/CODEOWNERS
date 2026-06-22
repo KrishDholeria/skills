@@ -1,0 +1,6 @@
+# Code owners for this repository.
+# Every change to any path requires review/approval from the owner below.
+# Combined with the "Protect main" ruleset (require code owner review),
+# this makes @KrishDholeria's approval the one that gates merges to main.
+
+* @KrishDholeria
